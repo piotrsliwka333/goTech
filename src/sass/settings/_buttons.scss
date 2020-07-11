@@ -7,6 +7,25 @@
 	border-radius: 5px;
 	text-decoration: none;
 	transition: all 0.5s ease;
+	border: none;
+	font-family: 'Poppins', sans-serif;
+	&:hover {
+		transition: all 0.5s ease;
+		box-shadow:0 0 10px $black-three-color, 0 0 3px $black-three-color inset;
+	}
+}
+
+.secondary-btn {
+	background: $white-color;
+	padding: 11px 27px;
+	font-size: 14px;
+	font-weight: 600;
+	color: $primary-color;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: all 0.5s ease;
+	border: 1.2px solid $primary-color;
+	font-family: 'Poppins', sans-serif;
 	&:hover {
 		transition: all 0.5s ease;
 		box-shadow:0 0 10px $black-three-color, 0 0 3px $black-three-color inset;
