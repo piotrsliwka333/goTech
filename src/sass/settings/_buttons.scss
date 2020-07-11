@@ -1,0 +1,14 @@
+.primary-btn {
+	background: $btn-gradient-color;
+	padding: 11px 27px;
+	font-size: 14px;
+	font-weight: 400;
+	color: $white-color;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: all 0.5s ease;
+	&:hover {
+		transition: all 0.5s ease;
+		box-shadow:0 0 10px $black-three-color, 0 0 3px $black-three-color inset;
+	}
+}
