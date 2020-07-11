@@ -1,0 +1,36 @@
+// break points (material UI's breakpoints)
+//xs, extra-small: 0px
+//sm, small: 600px
+//md, medium: 960px
+//lg, large: 1280px
+//xl, extra-large: 1920px
+
+// xs id default
+$sm-breakpoint: 600px;
+$md-breakpoint: 960px;
+$lg-breakpoint: 1280px;
+$xl-breakpoint: 1920px;
+
+@mixin sm () {
+  @media screen and (min-width: $sm-breakpoint) {
+    @content
+  }
+}
+
+@mixin md () {
+  @media screen and (min-width: $md-breakpoint) {
+    @content
+  }
+}
+
+@mixin lg () {
+  @media screen and (min-width: $lg-breakpoint) {
+    @content
+  }
+}
+
+@mixin xl () {
+  @media screen and (min-width: $xl-breakpoint) {
+    @content
+  }
+}

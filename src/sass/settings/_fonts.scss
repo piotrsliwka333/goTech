@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+html {
+  font-size: 10px;
+}
+// default font-size in web browsers is 16px
+// to have better calc when use rem I'll set 10px.
+body {
+  font-family: 'Poppins', sans-serif;
+}
