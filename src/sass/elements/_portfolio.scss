@@ -1,0 +1,102 @@
+.portfolio {
+  padding: 0 20px 100px 20px;
+
+  &__title {
+    font-size: 3rem;
+    color: $black-three-color;
+    text-align: center;
+    &_first {
+      font-weight: 400;
+      display: block;
+    }
+    &_second {
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+  .swiper-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 550px;
+    padding: 65px 50px 100px 50px;
+    .swiper-wrapper {
+
+      .swiper-slide {
+        box-shadow: 0 10px 30px #99999933;;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__photo {
+          width: 170px;
+          height: 170px;
+          display: block;
+          border-radius: 50%;
+          margin: 0 auto;
+          margin-bottom: 15px;
+        }
+        &__text {
+          text-align: center;
+          color: $black-three-color;
+          font-size: 2.4rem;
+          margin-bottom: 15px;
+          &_first {
+            font-weight: 400;
+          }
+          &_second {
+            font-weight: 600;
+          }
+        }
+        &__description {
+          font-size: 1.2rem;
+          color: $black-one-color;
+          line-height: 2.5rem;
+          text-align: center;
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  &__swiper-btn_prev, &__swiper-btn_next {
+    padding: 18px;
+    background: $white-color;
+    box-shadow: 0 10px 30px #99999933;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.5s ease;
+
+    &:active {
+      box-shadow: 0 10px 30px #99999933, 0 10px 30px #99999933 inset;
+      transition: all 0.5s ease;
+    }
+
+    &:hover {
+      background: darken($white-color, 2%);
+    }
+
+    img {
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  &__swiper-btn_prev {
+    margin-right: 10px;
+  }
+
+  &__swiper-btn_next {
+    margin-left: 10px;
+  }
+}
