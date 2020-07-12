@@ -1,0 +1,170 @@
+.career {
+  padding-bottom: 70px;
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    color: $black-three-color;
+
+    &_first {
+      font-weight: 400;
+    }
+
+    &_second {
+      font-weight: 600;
+    }
+  }
+
+  .career__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .career__decoration-container {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    display: none;
+    @include md {
+      display: block;
+    }
+  }
+
+  .career__decoration_photo {
+    border-radius: 50%;
+    display: block;
+  }
+
+  .career__decoration-container:nth-of-type(1) {
+    .career__decoration_photo:first-child {
+      width: 70px;
+      height: 70px;
+      margin-left: 30px;
+    }
+
+    .career__decoration_photo:nth-child(2) {
+      width: 90px;
+      height: 90px;
+      margin: 50px 0;
+    }
+
+    .career__decoration_photo:nth-child(3) {
+      width: 120px;
+      height: 120px;
+      margin-left: 30px;
+    }
+
+    .career__decoration_photo:nth-child(4) {
+      position: absolute;
+      width: 40px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 0;
+    }
+  }
+
+  .career__decoration-container:nth-of-type(2) {
+    .career__decoration_photo:first-child {
+      width: 120px;
+      height: 120px;
+      margin-left: auto;
+      margin-right: 30px;
+    }
+
+    .career__decoration_photo:nth-child(2) {
+      width: 90px;
+      height: 90px;
+      margin: 50px 0 50px auto;
+    }
+
+    .career__decoration_photo:nth-child(3) {
+      width: 70px;
+      height: 70px;
+      margin-left: auto;
+      margin-right: 60px;
+    }
+
+    .career__decoration_photo:nth-child(4) {
+      position: absolute;
+      width: 40px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%) rotateY(180deg);
+      border-radius: 0;
+    }
+  }
+
+  &-article {
+    margin-top: 50px;
+    width: 90%;
+    @include md {
+      width: 35%;
+    }
+
+    &__logo {
+      height: 130px;
+      width: 130px;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    &__text {
+      text-align: center;
+      margin: 0 auto 10px auto;
+      font-size: 1.7rem;
+      color: #333333;;
+      line-height: 3rem;
+      letter-spacing: 0.48px;
+
+    }
+
+    &__name {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #222222;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    &__position {
+      text-align: center;
+      font-size: 1rem;
+
+
+    }
+  }
+
+  &__buttons-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    @include md {
+      margin-top: 0;
+    }
+  }
+
+  &__btn_prev, &__btn_next {
+    background: transparent;
+    border: none;
+    color: $black-three-color;
+
+    img {
+      height: 15px;
+      width: 15px;
+    }
+  }
+
+  &__btn_prev {
+    margin-right: 15px;
+  }
+
+  &__btn_next {
+    margin-left: 15px;
+  }
+}

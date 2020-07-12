@@ -29,4 +29,45 @@ document.addEventListener('DOMContentLoaded', function () {
 			$header.classList.remove('scrolled-header')
 		}
 	})
+
+	//my own swiper
+	//DOM elements
+	const $careerArticles = document.querySelectorAll('.career-article')
+	const $careerPrevBtn = document.querySelector('.career__btn_prev')
+	const $careerNextBtn = document.querySelector('.career__btn_next')
+
+
+	let articleToShow = 1;
+	const currentArticle = (articleToShow) => {
+		$careerArticles.forEach(element => {
+			if(parseInt(element.dataset.id) === articleToShow) {
+				element.classList.remove('hide')
+			} else {
+				element.classList.add('hide')
+			}
+		})
+	}
+
+	$careerPrevBtn.addEventListener('click',function (e) {
+		if(articleToShow - 1 === 0) {
+			articleToShow = $careerArticles.length;
+		} else if (articleToShow - 1 <= $careerArticles.length) {
+			articleToShow --
+		}
+		currentArticle(articleToShow);
+	})
+
+	$careerNextBtn.addEventListener('click',function (e) {
+		if(articleToShow + 1 > $careerArticles.length) {
+			articleToShow = 1;
+		} else if (articleToShow + 1 <= $careerArticles.length) {
+			articleToShow ++
+		}
+		currentArticle(articleToShow);
+	})
+	//current article
+
+
+
+
 })
