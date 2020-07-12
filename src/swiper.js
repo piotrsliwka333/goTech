@@ -4,6 +4,7 @@ var swiper = new Swiper('.swiper-container', {
 	slidesPerView: 1,
 	centeredSlides: true,
 	spaceBetween: 10,
+	loop: true,
 	breakpoints: {
 		// when window width is >= 320px
 		600: {
