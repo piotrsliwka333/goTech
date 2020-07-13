@@ -178,6 +178,9 @@
     box-shadow: $elements-box-shadow;
     left: 0;
     transition: all 0.5s ease;
+    @include lg {
+      box-shadow: none;
+    }
   }
 }
 
