@@ -15,7 +15,8 @@
   z-index: 2;
   transition: all 0.5s ease;
   @include lg {
-    padding: 10px 100px;
+    padding: 15px 100px;
+    border-radius: 0 0 3px 3px;
   }
   @include xl {
     padding: 10px 200px;
@@ -105,6 +106,11 @@
           border-radius: 4px;
           font-size: 1.2rem;
           display: block;
+          width: 80%;
+          margin-right: 10px;
+          @include lg {
+            margin-right: 0;
+          }
 
           &::placeholder {
             color: $black-one-color;
@@ -121,8 +127,8 @@
         padding: 25px;
         outline: none;
         @include lg {
-          font-size: 1.8rem;
-          padding: 13px 28px;
+          font-size: 1.5rem;
+          padding: 13px 25px;
           border-radius: 2px;
         }
 

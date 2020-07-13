@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	//fn which add class for active element in navigation
 	$navLinks.forEach(element => {
 		element.addEventListener('click', function (e) {
-			e.preventDefault();
+			$nav.classList.toggle('nav-active');
 			$navLinks.forEach(element => element.classList.remove('active-link'));
 			this.classList.add('active-link')
 		})

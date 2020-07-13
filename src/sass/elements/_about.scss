@@ -1,14 +1,24 @@
 .about {
-  padding: 200px 0;
+  padding: 200px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
   &-article {
     display: flex;
     width: 100%;
     align-items: center;
+    flex-direction: column;
+    @include md {
+      flex-direction: row;
+    }
 
     &__content-wrapper {
-      width: 40%;
+      width: 100%;
+      margin-bottom: 40px;
+      @include md {
+        margin-bottom: 0;
+        width: 40%;
+      }
     }
 
     &__title {
@@ -38,7 +48,9 @@
   }
   &-article:nth-of-type(2) {
     margin-top: 150px;
-    flex-direction: row-reverse;
+    @include md {
+      flex-direction: row-reverse;
+    }
   }
   .about-article__photo-wrapper {
     width: 60%;
