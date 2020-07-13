@@ -318,6 +318,46 @@
         </div>
     </section>
 
+    <section class="contact">
+        <h6 class="contact__title">
+            <span class="contact__title_first">Facing Problem ?</span>
+            <span class="contact__title_second">Lets Get In Touch Now</span>
+        </h6>
+        <form class="contact-form">
+            <div class="input-wrapper">
+                <label for="first-name" class="contact-form__label">First Name</label>
+                <input id="first-name" type="text" placeholder="Robert Lee" name="name" class="contact-form__input">
+            </div>
+            <div class="input-wrapper">
+                <label for="last-name" class="contact-form__label">Last Name</label>
+                <input id="last-name" type="text" placeholder="Anderson" name="surname" class="contact-form__input">
+            </div>
+            <div class="input-wrapper" >
+                <label for="email" class="contact-form__label">Your email address</label>
+                <input id="email" type="email" placeholder="kevin.jones@mail.com" name="email" class="contact-form__input">
+            </div>
+            <div class="input-wrapper">
+                <label for="problem" class="contact-form__label">Which Related Problem You Are Facing?</label>
+                <select id="problem" class="contact-form__select">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="product problem">Issue with Product</option>
+                    <option value="software problem">Issue with Software</option>
+                    <option value="different problem">Different type of problem</option>
+                </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="message" class="contact-form__label">Message</label>
+                <textarea rows="3" placeholder="Lorem Ipsum is simply dummy text of the printing and...……." id="message" name="message" class="contact-form__input"></textarea>
+            </div>
+            <button type="submit" class="primary-btn contact-form__btn">Our Works</button>
+            <p class="error name-error hide">At least 2 signs</p>
+            <p class="error surname-error hide">At least 3 signs</p>
+            <p class="error email-error hide">Please enter valid email</p>
+            <p class="error problem-error hide">Please select your problem</p>
+            <p class="error message-error hide">The message must contain 120 characters</p>
+        </form>
+    </section>
+
 </main>
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>

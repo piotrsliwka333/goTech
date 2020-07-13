@@ -1,0 +1,174 @@
+.contact {
+  padding: 70px 0;
+  width: 100%;
+  background: transparent linear-gradient(1deg, #FFFFFF 0%, #C9E6FF 100%) 0 0 no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    font-size: 3.5rem;
+    color: $black-three-color;
+    text-align: center;
+    line-height: 4rem;
+
+    &_first {
+      font-weight: 400;
+      display: block;
+
+    }
+
+    &_second {
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+  &-form {
+    position: relative;
+    margin-top: 50px;
+    background-color: $white-color;
+    box-shadow: 0 20px 60px #3E3E3E29;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    @include md {
+      padding: 60px 60px 48px 51px;
+      width: 770px;
+
+    }
+
+    .input-wrapper {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .input-wrapper {
+      width: 100%;
+
+    }
+
+    .input-wrapper:nth-of-type(1), .input-wrapper:nth-of-type(2) {
+      @include sm {
+        width: 45%;
+      }
+    }
+
+    &__label {
+      display: block;
+      letter-spacing: 0;
+      color: #222222;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    &__input {
+      font-size: 1.5rem;
+      padding: 5px 20px 15px 0;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      border-bottom: 1px solid #E5E5E5;
+      display: block;
+      width: 100%;
+      resize: none;
+
+      &::placeholder {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        color: #C2C2C2;
+      }
+    }
+
+    &__select {
+      border: none;
+      border-bottom: 1px solid #E5E5E5;
+      width: 100%;
+      padding: 5px 20px 20px 0;
+      display: block;
+      color: #C2C2C2;
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+
+      option[disabled] {
+        color: silver;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        border: none;
+      }
+    }
+
+    .error {
+      left: 0;
+      position: absolute;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: tomato;
+      padding-left: 30px;
+      @include md {
+        padding-left: 51px;
+      }
+    }
+
+    .name-error {
+      top: 115px;
+      @include sm {
+        top: 115px;
+      }
+      @include md {
+        top: 145px;
+      }
+
+    }
+
+    .surname-error {
+      top: 230px;
+      @include sm {
+        top: 115px;
+        left: 50%;
+      }
+      @include md {
+        top: 145px;
+        left: 47%;
+      }
+
+    }
+
+    .email-error {
+      top: 345px;
+      @include sm {
+        top: 230px;
+      }
+      @include md {
+        top: 260px;
+      }
+    }
+
+    .problem-error {
+      top: 465px;
+      @include sm {
+        top: 345px;
+      }
+      @include md {
+        top: 375px;
+      }
+    }
+
+    .message-error {
+      top: 625px;
+      @include sm {
+        top: 510px;
+      }
+      @include md {
+        top: 540px;
+      }
+    }
+  }
+}
