@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="recruitment task">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+          integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/siteLogo.png"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>goTech</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<header class="header">
+    <a href="#jumbotron" class="logo" aria-label="logo">
+        <img alt="logo" src="assets/hex-lab@2x.png"/>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav ">
+        <ul class="nav-list">
+            <li class="nav-list__element">
+                <a href="#jumbotron" class="nav-list__link active-link">Home</a>
+            </li>
+            <li class="nav-list__element">
+                <a href="#about" class="nav-list__link ">About</a>
+            </li>
+            <li class="nav-list__element">
+                <a href="#portfolio" class="nav-list__link">Portfolio</a>
+            </li>
+            <li class="nav-list__element">
+                <a href="#products" class="nav-list__link">Product</a>
+            </li>
+            <li class="nav-list__element">
+                <a href="#career" class="nav-list__link">Career</a>
+            </li>
+            <li class="nav-list__element">
+                <a href="#jumbotron" class="nav-list__link">Blog</a>
+            </li>
+            <li class="nav-list__element">
+                <input id="nav-list__input" class="nav-list__input" type="text" placeholder="Search Here">
+                <label for="nav-list__input" class="nav-list__label">
+                    <i class="fas fa-search"></i>
+                </label>
+            </li>
+            <li class="nav-list__element">
+                <a href="#contact" class="primary-btn nav-list__btn">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="jumbotron" id="jumbotron">
+        <h1 class="jumbotron__title">
+            <span class="jumbotron__title_first">We create Simple Solution</span>
+            <span class="jumbotron__title_second">For Your Complex task</span>
+        </h1>
+        <p class="jumbotron__text">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec elaboraret
+            interpretaris, sed diceret concludaturque no. Verear habemus sea ut
+        </p>
+        <div class="jumbotron__buttons-wrapper">
+            <button class="jumbotron__btn primary-btn">Our Works</button>
+            <button class="jumbotron__btn secondary-btn">Know More</button>
+        </div>
+        <div class="jumbotron__floor"></div>
+    </section>
+
+    <section class="about" id="about">
+        <article class="about-article">
+            <div class="about-article__content-wrapper">
+                <h2 class="about-article__title">
+                    <span class="about-article__title_first">The Process</span>
+                    <span class="about-article__title_second">About Our Work</span>
+                </h2>
+                <p class="about-article__text">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
+                    elaboraret interpretaris, sed diceret
+                    concludaturque ndo. Verear habemus sea ut. His nibh scripta in. In sea vocibus facilisis. Sed
+                </p>
+                <p class="about-article__text">vel cu paulo doctus vidisse. Iudico dicant nostrum nec an, in eos In
+                    detraxit eleifend duo, alterum iudicabit consectetuer per ad.
+                </p>
+                <button class="primary-btn about-article__btn">Know More</button>
+            </div>
+            <div class="about-article__photo-wrapper">
+                <img class="about-article__photo" src="assets/Group%202556@2x.png">
+                <div class="about-article__shapes">
+                </div>
+            </div>
+        </article>
+
+        <article class="about-article">
+            <div class="about-article__content-wrapper">
+                <h2 class="about-article__title">
+                    <span class="about-article__title_first">We are here to</span>
+                    <span class="about-article__title_second">always help you</span>
+                </h2>
+                <p class="about-article__text">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, a elaboraret
+                    interpretaris, sed diceret concludaturque nasdo habemus sea ut. His nibh scripta in. In sea vocibus
+                    facilisis.
+                </p>
+                <p class="about-article__text">vel cu paulo doctus vidsse. Iudico dicant nostrum nec aIn detraxit
+                    eleifend duo, alterum iudicabit consectetuer per.
+                </p>
+            </div>
+            <div class="about-article__photo-wrapper">
+                <img class="about-article__photo" src="assets/Layer_1@2x.png">
+            </div>
+        </article>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h3 class="portfolio__title">
+            <span class="portfolio__title_first">What is the</span>
+            <span class="portfolio__title_second">Speciality Of Us?</span>
+        </h3>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/Group%201952@2x.png" class="swiper-slide__photo"/>
+                    <p class="swiper-slide__text">
+                        <span class="swiper-slide__text_first">Quick</span>
+                        <span class="swiper-slide__text_second">Response</span>
+                    </p>
+                    <p class="swiper-slide__description">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
+                        concludaturque ndo. Verear
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Group%201958@2x.png" class="swiper-slide__photo"/>
+                    <p class="swiper-slide__text">
+                        <span class="swiper-slide__text_first">Great</span>
+                        <span class="swiper-slide__text_second">Communication</span>
+                    </p>
+                    <p class="swiper-slide__description">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
+                        concludaturque ndo. Verear
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Group%201956@2x.png" class="swiper-slide__photo"/>
+                    <p class="swiper-slide__text">
+                        <span class="swiper-slide__text_first">Customer</span>
+                        <span class="swiper-slide__text_second">satisfaction</span>
+                    </p>
+                    <p class="swiper-slide__description">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
+                        concludaturque ndo. Verear
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Group%201952@2x.png" class="swiper-slide__photo"/>
+                    <p class="swiper-slide__text">
+                        <span class="swiper-slide__text_first">Quick</span>
+                        <span class="swiper-slide__text_second">Response</span>
+                    </p>
+                    <p class="swiper-slide__description">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
+                        concludaturque ndo. Verear
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Group%201958@2x.png" class="swiper-slide__photo"/>
+                    <p class="swiper-slide__text">
+                        <span class="swiper-slide__text_first">Great</span>
+                        <span class="swiper-slide__text_second">Communication</span>
+                    </p>
+                    <p class="swiper-slide__description">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
+                        concludaturque ndo. Verear
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Group%201956@2x.png" class="swiper-slide__photo"/>
+                    <p class="swiper-slide__text">
+                        <span class="swiper-slide__text_first">Customer</span>
+                        <span class="swiper-slide__text_second">satisfaction</span>
+                    </p>
+                    <p class="swiper-slide__description">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec
+                        concludaturque ndo. Verear
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio__buttons-wrapper">
+            <button class=" portfolio__swiper-btn_prev" aria-label="previous slide button">
+                <img alt="arrow-left" src="assets/arrow-left-1@2x.png"/>
+            </button>
+            <button class=" portfolio__swiper-btn_next" aria-label="next slide button">
+                <img alt="arrow-right" src="assets/arrow-right-1@2x.png"/>
+            </button>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h4 class="products__title">
+            <span class="products__title_first">Our Owning</span>
+            <span class="products__title_second">Products</span>
+        </h4>
+        <p class="products__description">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec habemus sea ut.
+            His nibh scripta in. In sea vocibus facilisis.
+        </p>
+        <div class="products__container">
+            <div class="product-box product-box-1">
+                <img class="product-box__logo" alt="product logo" src="assets/earth-2.0@2x.png"/>
+                <p class="product-box__text">Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec</p>
+                <a href="#" class="product-box__link">Learn More</a>
+            </div>
+            <div class="product-box product-box-2">
+                <img class="product-box__logo" alt="product logo" src="assets/hex-lab@2x.png"/>
+                <p class="product-box__text">Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec</p>
+                <a href="#" class="product-box__link">Learn More</a>
+            </div>
+            <div class="product-box product-box-3">
+                <img class="product-box__logo" alt="product logo" src="assets/liva@2x.png"/>
+                <p class="product-box__text">Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec</p>
+                <a href="#" class="product-box__link">Learn More</a>
+            </div>
+            <div class="product-box product-box-4">
+                <img class="product-box__logo" alt="product logo" src="assets/lighting@2x.png"/>
+                <p class="product-box__text">Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec</p>
+                <a href="#" class="product-box__link">Learn More</a>
+            </div>
+            <div class="product-box product-box-5">
+                <img class="product-box__logo" alt="product logo" src="assets/aven@2x.png"/>
+                <p class="product-box__text">Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec</p>
+                <a href="#" class="product-box__link">Learn More</a>
+            </div>
+            <div class="product-box product-box-6">
+                <img class="product-box__logo" alt="product logo" src="assets/ideaa@2x.png"/>
+                <p class="product-box__text">Lorem ipsum dolor sit amet, el accumsan liberavisse ex, ea nec</p>
+                <a href="#" class="product-box__link">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="career" id="career">
+        <h5 class="career__title">
+            <span class="career__title_first">What Our</span>
+            <span class="career__title_second">Client Says?</span>
+        </h5>
+        <div class="career__container">
+            <div class="career__decoration-container ">
+                <img alt="people" class="career__decoration_photo" src="assets/albert-dera-ILip77SbmOE-unsplash@2x.png">
+                <img alt="people" class="career__decoration_photo" src="assets/tyler-nix-PQeoQdkU9jQ-unsplash@2x.png">
+                <img alt="people" class="career__decoration_photo" src="assets/eduardo-dutra-RPKmkxJw_a0-unsplash@2x.png">
+                <img src="assets/quote-left-1@2x.png" class="career__decoration_photo">
+            </div>
+            <article class="career-article" data-id="1">
+                <img src="assets/albert-dera-ILip77SbmOE-unsplash@2x.png" alt="men" class="career-article__logo">
+                <p class="career-article__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore dolore magna
+                </p>
+                <p class="career-article__name">
+                    Rubiya Mond De-Patrica
+                </p>
+                <p class="career-article__position">
+                    CEO, Zexbay-Fine
+                </p>
+            </article>
+            <article class="career-article hide" data-id="2">
+                <img src="assets/azamat-zhanisov-wO4gtmdlW5Y-unsplash@2x.png" alt="men" class="career-article__logo">
+                <p class="career-article__text">XLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore dolore magna
+                </p>
+                <p class="career-article__name">
+                    Rubiya Mond De-Patrica
+                </p>
+                <p class="career-article__position">
+                    CEO, Zexbay-Fine
+                </p>
+            </article>
+            <article class="career-article hide" data-id="3">
+                <img src="assets/jurica-koletic-7YVZYZeITc8-unsplash@2x.png" alt="men" class="career-article__logo">
+                <p class="career-article__text">ZLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore dolore magna
+                </p>
+                <p class="career-article__name">
+                    Rubiya Mond De-Patrica
+                </p>
+                <p class="career-article__position">
+                    CEO, Zexbay-Fine
+                </p>
+            </article>
+            <article class="career-article hide" data-id="4">
+                <img src="assets/eduardo-dutra-RPKmkxJw_a0-unsplash@2x.png" alt="men" class="career-article__logo">
+                <p class="career-article__text">FLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore dolore magna
+                </p>
+                <p class="career-article__name">
+                    Rubiya Mond De-Patrica
+                </p>
+                <p class="career-article__position">
+                    CEO, Zexbay-Fine
+                </p>
+            </article>
+            <div class="career__decoration-container ">
+                <img alt="people" class="career__decoration_photo" src="assets/azamat-zhanisov-wO4gtmdlW5Y-unsplash@2x.png">
+                <img alt="people" class="career__decoration_photo" src="assets/tyler-nix-PQeoQdkU9jQ-unsplash@2x.png">
+                <img alt="people" class="career__decoration_photo" src="assets/2873@2x.png">
+                <img src="assets/quote-left-1@2x.png" class="career__decoration_photo">
+            </div>
+        </div>
+
+        <div class="career__buttons-wrapper">
+            <button class="career__btn_prev" aria-label="previous slide button">
+                <img alt="left arrow" src="assets/arrow-left-1@2x.png">
+            </button>
+            <button class="career__btn_next" aria-label="next slide button">
+                <img alt="right arrow" src="assets/arrow-right-1@2x.png">
+            </button>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h6 class="contact__title">
+            <span class="contact__title_first">Facing Problem ?</span>
+            <span class="contact__title_second">Lets Get In Touch Now</span>
+        </h6>
+        <form class="contact-form">
+            <div class="input-wrapper">
+                <label for="first-name" class="contact-form__label">First Name</label>
+                <input id="first-name" type="text" placeholder="Robert Lee" name="name" class="contact-form__input">
+            </div>
+            <div class="input-wrapper">
+                <label for="last-name" class="contact-form__label">Last Name</label>
+                <input id="last-name" type="text" placeholder="Anderson" name="surname" class="contact-form__input">
+            </div>
+            <div class="input-wrapper" >
+                <label for="email" class="contact-form__label">Your email address</label>
+                <input id="email" type="email" placeholder="kevin.jones@mail.com" name="email" class="contact-form__input">
+            </div>
+            <div class="input-wrapper">
+                <label for="problem" class="contact-form__label">Which Related Problem You Are Facing?</label>
+                <select id="problem" class="contact-form__select">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="product problem">Issue with Product</option>
+                    <option value="software problem">Issue with Software</option>
+                    <option value="different problem">Different type of problem</option>
+                </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="message" class="contact-form__label">Message</label>
+                <textarea rows="3" placeholder="Lorem Ipsum is simply dummy text of the printing and...……." id="message" name="message" class="contact-form__input"></textarea>
+            </div>
+            <button type="submit" class="primary-btn contact-form__btn">Our Works</button>
+            <p class="error name-error hide">At least 2 signs</p>
+            <p class="error surname-error hide">At least 3 signs</p>
+            <p class="error email-error hide">Please enter valid email</p>
+            <p class="error problem-error hide">Please select your problem</p>
+            <p class="error message-error hide">The message must contain 120 characters</p>
+        </form>
+    </section>
+</main>
+<footer class="footer">
+    <img alt="logo" class="footer__logo" src="assets/hex-lab@2x.png"/>
+    <div class="footer__content-container">
+        <div class="content-box contact-us">
+            <p class="content-box__main-text">Contact Us
+            </p>
+            <p class="content-box__text">+(290) 520-7927
+            </p>
+            <p class="content-box__text">Dhaka,Bangladesh</p>
+            <p class="content-box__text">themefisher.com</p>
+        </div>
+        <div class="content-box our-company">
+            <p class="content-box__main-text">Our Company</p>
+            <ul class="content-box__list">
+                <li class="content-box__list__element">About</li>
+                <li class="content-box__list__element">Product</li>
+                <li class="content-box__list__element">Portfolio</li>
+                <li class="content-box__list__element">Career</li>
+                <li class="content-box__list__element">Blog</li>
+            </ul>
+        </div>
+        <div class="content-box social-contacts">
+            <p class="content-box__main-text">Social Contacts</p>
+            <ul class="content-box__list">
+                <li class="content-box__list__element">About</li>
+                <li class="content-box__list__element">Product</li>
+                <li class="content-box__list__element">Portfolio</li>
+                <li class="content-box__list__element">Career</li>
+                <li class="content-box__list__element">Blog</li>
+            </ul>
+        </div>
+        <div class="content-box address">
+            <p class="content-box__main-text">Address</p>
+            <p class="content-box__text">Internet Systems Consortium, Inc. 950</p>
+            <p class="content-box__text">Charter Street Redwood City, CA USA.</p>
+        </div>
+        <div class="content-box follow-us">
+            <p class="content-box__main-text">Follow Us</p>
+            <div class="social-media-icons-wrapper">
+                <a class="social-media-icon" aria-label="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social-media-icon" aria-label="facebook">
+                    <i class="fab fa-skype"></i>
+                </a>
+                <a class="social-media-icon" aria-label="facebook">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="social-media-icon" aria-label="facebook">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <p class="footer__copyrights">Copyright@themefisher2020</p>
+</footer>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="App.js"></script>
+<script src="swiper.js"></script>
+
+</html>
