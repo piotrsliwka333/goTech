@@ -1,4 +1,6 @@
 .portfolio {
+  width: 100%;
+  overflow: hidden;
   padding: 0 20px 100px 20px;
 
   &__title {
@@ -21,9 +23,8 @@
     height: 550px;
     padding: 65px 50px 40px 50px;
     .swiper-wrapper {
-
       .swiper-slide {
-        box-shadow: 0 10px 30px #99999933;;
+        box-shadow: 0 10px 30px #99999933;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -60,7 +61,6 @@
         }
       }
     }
-
   }
 
   &__buttons-wrapper {
@@ -69,7 +69,8 @@
     margin-top: 20px;
   }
 
-  &__swiper-btn_prev, &__swiper-btn_next {
+  &__swiper-btn_prev,
+  &__swiper-btn_next {
     padding: 18px;
     background: $white-color;
     box-shadow: 0 10px 30px #99999933;

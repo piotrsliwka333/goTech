@@ -2,3 +2,5 @@ node_modules
 package-lock.json
 .idea
 build
+src/css/main.css
+src/css/main.css.map
